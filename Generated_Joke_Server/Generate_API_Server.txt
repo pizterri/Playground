@@ -1,0 +1,1 @@
+openapi-generator-cli generate -g spring --library spring-boot -i jokes_Openapi3.0.yaml -p groupId=com.sandro -p artifactId=Joke -p artifactVersion=1.0.0-SNAPSHOT -p basePackage=com.sandro.joke -p configPackage=com.sandro.joke.config -p apiPackage=com.sandro.joke.api -p modelPackage=com.sandro.joke.model -p sourceFolder=src/main/gen -p dateLibrary=java8 -p java8=true
