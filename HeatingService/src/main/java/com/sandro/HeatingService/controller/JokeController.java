@@ -1,10 +1,17 @@
 package com.sandro.HeatingService.controller;
 
         import com.sandro.HeatingService.service.JokeRestService;
-        import org.springframework.boot.web.client.RestTemplateBuilder;
-        import org.springframework.web.bind.annotation.RequestMapping;
-        import org.springframework.web.bind.annotation.RestController;
+import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import com.alig.*;
 
+ /*
+        import com.alig.joke.*;
+        import com.alig.joke.auth.*;
+        import com.alig.joke.model.*;
+        import com.alig.joke.api.DefaultApi;
+*/
 @RestController
 public class JokeController {
 
