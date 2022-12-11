@@ -1,3 +1,5 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+/jarRepositories.xml
+/libraries/Maven__ch_qos_logback_logback_classic_1_4_5.xml

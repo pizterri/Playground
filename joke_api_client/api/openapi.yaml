@@ -1,0 +1,45 @@
+openapi: 3.0.0
+info:
+  description: This is the example Swagger specfiication for the https://official-joke-api.appspot.com/random_joke
+  title: Sample Jokes API
+  version: 0.1.9
+servers:
+- description: This is a fee app available
+  url: https://official-joke-api.appspot.com/
+paths:
+  /random_joke:
+    get:
+      description: This end poin returns an random joke out of a list of jokes.
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+          description: A Joke Object
+      summary: Returns a joke
+      x-accepts: application/json
+components:
+  schemas:
+    inline_response_200:
+      example:
+        punchline: A Stick.
+        setup: What do you call a boomerang that won't come back?
+        id: 1
+        type: general
+      properties:
+        id:
+          example: 1
+          format: int64
+          type: integer
+        type:
+          example: general
+          type: string
+        setup:
+          example: What do you call a boomerang that won't come back?
+          type: string
+        punchline:
+          example: A Stick.
+          type: string
+      type: object
+

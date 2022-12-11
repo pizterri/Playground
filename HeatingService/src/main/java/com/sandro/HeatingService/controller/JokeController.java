@@ -4,9 +4,12 @@ package com.sandro.HeatingService.controller;
         import org.springframework.boot.web.client.RestTemplateBuilder;
         import org.springframework.web.bind.annotation.RequestMapping;
         import org.springframework.web.bind.annotation.RestController;
+        import com.sandro.joke.api;
 
 @RestController
 public class JokeController {
+
+    private
 
     private RestTemplateBuilder restTemplateBuilder = new RestTemplateBuilder();
     private JokeRestService jokeRestService = new JokeRestService(restTemplateBuilder);
